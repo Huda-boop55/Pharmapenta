@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Previous head content and most styles remain the same, only updating logo-related styles -->
 <head>
+    <!-- All other head content and styles remain exactly the same -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PharmaPenta Agro - Leading provider of pharmaceuticals and dietary supplements combining science with natural ingredients">
     <title>PharmaPenta Agro | Pharmaceuticals & Dietary Supplements</title>
     <style>
+        /* Previous styles remain the same */
         :root {
             --primary-color: #007f5f;
             --primary-dark: #005f46;
@@ -13,8 +16,30 @@
             --text-dark: #333333;
             --background-light: #f4f4f4;
             --spacing-standard: 20px;
+            --brand-green: #0B6A3C;
+            --brand-gold: #B87D24;
         }
 
+        /* Updated logo styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .logo {
+            color: var(--primary-color);
+        }
+
+        .logo-image {
+            height: 50px;
+            width: auto;
+        }
+
+        /* All other previous styles remain exactly the same */
         * {
             margin: 0;
             padding: 0;
@@ -41,11 +66,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
         }
 
         nav ul {
@@ -196,13 +216,29 @@
             .section {
                 padding: 1.5rem;
             }
+
+            .logo-image {
+                height: 40px;
+            }
+
+            .logo-container {
+                padding: 0.3rem 0.8rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">PharmaPenta Agro</div>
+            <div class="logo-container">
+                <svg class="logo-image" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 20 A80 80 0 1 0 180 100" fill="none" stroke="#B87D24" stroke-width="15"/>
+                    <path d="M100 20 L100 60" stroke="#B87D24" stroke-width="8"/>
+                    <path d="M85 45 Q100 20 115 45" fill="#0B6A3C"/>
+                    <path d="M70 80 Q100 40 130 80" fill="none" stroke="#0B6A3C" stroke-width="15"/>
+                </svg>
+                <div class="logo">PharmaPenta Agro</div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -213,6 +249,7 @@
         </div>
     </header>
 
+    <!-- Rest of the content remains exactly the same -->
     <section class="hero">
         <div class="hero-content">
             <h1>Wellness Redefined with Nature's Best</h1>
@@ -267,9 +304,9 @@
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li>Email: info@pharmapenta.com</li>
-                    <li>Phone: (555) 123-4567</li>
-                    <li>Address: 123 Health Avenue</li>
+                    <li>Email: pharma.penta9@gmail.com</li>
+                    <li>Phone: +201095603131</li>
+                    <li>Address: 21 El-Ekhshid St. - Manial El-Rawda - Giza.</li>
                 </ul>
             </div>
             <div class="footer-section">
